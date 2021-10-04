@@ -1,0 +1,17 @@
+{
+    "Logging": {
+        "LogLevel": {
+          "Default": "Information",
+          "Microsoft": "Warning",
+          "Microsoft.Hosting.Lifetime": "Information"
+        }
+    },
+
+    "IsEncrypted": false,
+    "Values": {
+        "AzureWebJobsStorage": "UseDevelopmentStorage=true",
+        "FUNCTIONS_WORKER_RUNTIME": "dotnet",
+        "ServiceBusConnectionString":"Endpoint=sb://fncsvcbqsl-svcbus-ns.servicebus.windows.net/;SharedAccessKeyName=RootManageSharedAccessKey;SharedAccessKey=Vwue5LbEMtRU3RRTVC5ClbpN5hG+ScwBEE3T1MVFRfk=",
+        "QueueName": "fncsvcbqsl-svcbus-queue"
+    }
+}
