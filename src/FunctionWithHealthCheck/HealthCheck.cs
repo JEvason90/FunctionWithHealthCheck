@@ -25,7 +25,12 @@ namespace QueueDetector
 
             var healthStatus = _healthCheck.CheckHealthAsync().Result;
 
-            return new OkObjectResult(healthStatus);
+            if(healthStatus.Status != HealthStatus.Healthy)
+            {
+                return new StatusCodeResult(500);
+            }
+
+            return new OkObjectResult(healthStatus.Status);
         }
     }
 }
